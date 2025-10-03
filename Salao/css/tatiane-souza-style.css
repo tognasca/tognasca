@@ -1,0 +1,96 @@
+
+:root {
+  --cor-dourado: #D4AF37;
+  --cor-nude: #FDF4ED;
+  --cor-marrom: #8B6B4D;
+  --cor-preto: #111111;
+  --cor-branco: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-nude);
+  color: var(--cor-preto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--cor-branco);
+  border-bottom: 2px solid var(--cor-dourado);
+}
+
+nav a {
+  color: var(--cor-marrom);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--cor-dourado);
+}
+
+.hero {
+  background: url('../img/header-megahair.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cor-branco);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(20, 0, 0, 0.7));
+  z-index: 1;
+}
+
+.hero > div {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--cor-dourado);
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.9);
+}
+
+.hero p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--cor-branco);
+}
+
+.btn {
+  background-color: var(--cor-dourado);
+  color: var(--cor-branco);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--cor-marrom);
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+}
+.img-fluid-logo {
+  max-height: 250px;
+  max-width: 200px;
+  object-fit: cover;
+}

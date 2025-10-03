@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1a1a1a;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ee687f, #f8bdc6);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffd700 !important;
+}
+
+.nav-link {
+  color: #eee !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+.hero {
+  background: url('../img/header-megahair.jpg') center center no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed; /* opcional: efeito parallax leve */
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(20, 0, 0, 0.8));
+  z-index: 1;
+  backdrop-filter: brightness(0.8);
+}
+
+.hero > div {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+}
+
+.hero p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-warning {
+  background: linear-gradient(45deg, #ffd700, #ff8c00);
+  border: none;
+  font-weight: 600;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+  transition: background 0.4s ease;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(45deg, #ff8c00, #ffd700);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.6);
+  color: #111;
+}
+
+section {
+  padding: 60px 0;
+}
+
+#sobre {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#sobre h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+#sobre p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+#servicos {
+  background: linear-gradient(90deg, #ee687f, #f8bdc6);
+}
+
+#servicos h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #ffd700;
+  text-align: center;
+}
+
+#servicos .col-md-4 {
+  margin-bottom: 30px;
+}
+
+#servicos img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+#servicos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.8);
+}
+
+#servicos h5 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+#pacotes {
+  background: #111;
+  color: #eee;
+  text-align: center;
+}
+
+#pacotes h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #ffd700;
+}
+
+.card {
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 30px;
+  color: #ffd700;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.8);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.card-text {
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+strong {
+  font-size: 1.3rem;
+}
+
+#contato {
+  background: linear-gradient(90deg, #ee687f, #f8bdc6);
+  /* color: #eee; */
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#contato h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+#contato p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#contato a {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+#contato a:hover {
+  color: #fff;
+}
+
+#orcamento {
+  background: #222;
+  color: #eee;
+  padding-bottom: 80px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+  padding: 40px 30px;
+}
+
+#orcamento h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+}
+
+#orcamento input,
+#orcamento textarea {
+  background: #333;
+  border: none;
+  border-radius: 8px;
+  color: #eee;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  resize: none;
+  transition: background 0.3s ease;
+}
+
+#orcamento input:focus,
+#orcamento textarea:focus {
+  background: #555;
+  outline: none;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+#orcamento button {
+  width: 100%;
+  background: linear-gradient(45deg, #ffd700, #ff8c00);
+  border: none;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+#orcamento button:hover {
+  background: linear-gradient(45deg, #ff8c00, #ffd700);
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px 0;
+  color: #8
